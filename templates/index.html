@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covgen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="gradient-overlay"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='logo.webp') }}" alt="UNC Logo" 
+                 class="unc-logo animate__animated animate__zoomIn">
+            <h1 class="animate__animated animate__fadeInDown">
+                <span class="text-navy">Cover gen</span>
+            </h1>
+            <p class="subtitle animate__animated animate__fadeIn animate__delay-1s">Powered by Gemini AI</p>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card upload-section reveal">
+            <div class="card-content">
+                <h2>Create Your Masterpiece</h2>
+                <p class="instruction">Upload your resume and job description to begin</p>
+                
+                <form id="coverForm" enctype="multipart/form-data">
+                    <div class="drag-drop" id="dropZone">
+                        <div class="upload-icon">📄</div>
+                        <p>Drag & Drop Resume (PDF/TXT)</p>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.txt" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job_description">Job Description</label>
+                        <textarea id="job_description" name="job_description" 
+                                  placeholder="Paste the job description here..." 
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="generate-btn">
+                        <span class="btn-text">Generate Cover Letter</span>
+                        <span class="loading-dots"></span>
+                        <div class="btn-gradient"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="result" class="card hidden reveal">
+            <div class="card-content">
+                <div class="result-header">
+                    <h2>Your Custom Cover Letter</h2>
+                    <button class="download-btn">
+                        <span>Download</span>
+                        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                    </button>
+                </div>
+                <div id="coverLetterContent" class="cover-letter-output"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal">
+        <p>Made with ❤️ in Chapel Hill</p>
+        <p>© 2024 Josh Robertson</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 120 },
+                color: { value: ['#4B9CD3', '#13294B'] },
+                shape: { type: 'circle' },
+                opacity: { value: 0.7 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: 'none',
+                    random: true,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
