@@ -1,5 +1,5 @@
 # Cover gen
-<img src="https://github.com/user-attachments/assets/3593be9f-2f9f-4f3a-a25d-8b4f86218fff" alt="image" width="300" height="300">
+<img src="https://github.com/user-attachments/assets/9f089917-b3d2-4918-9d7b-cbe2ec47ce3f" alt="cover" >
 
 
 A generative AI-powered tool to create personalized and professional cover letters leveraging Google's Gemini 2.0 Flash generative AI model. 
@@ -60,9 +60,11 @@ A generative AI-powered tool to create personalized and professional cover lette
 
 ### Upload Your Resume
 Drag and drop your resume (PDF or TXT) into the upload zone, or click to select a file.
+<img src="https://github.com/user-attachments/assets/0cf05b47-545b-431a-8a9a-882870a63911" alt="file upload">
 
 ### Paste the Job Description
 Copy and paste the job description into the provided text box.
+<img src="https://github.com/user-attachments/assets/e73725c9-5b38-4ddc-bcbb-d73e95f0f685" alt=job>
 
 ### Generate the Cover Letter
 Click the **"Generate Cover Letter"** button. The AI will analyze your resume and job description to create a tailored cover letter.
@@ -70,16 +72,7 @@ Click the **"Generate Cover Letter"** button. The AI will analyze your resume an
 ### Download the Cover Letter
 Once generated, click the **"Download"** button to save the cover letter as a `.txt` file.
 
----
-
-## Example
-
-**Input:**
-- **Resume:** Upload a PDF or TXT file containing your resume.
-- **Job Description:** Paste the job description for the role you're applying for.
-
-**Output:**
-- A professionally written cover letter tailored to your resume and the job description.
+<img src="https://github.com/user-attachments/assets/72d841b2-d99c-4c55-b3f9-df0b1dd306c1" alt="output">
 
 ---
 
