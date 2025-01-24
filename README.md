@@ -1,6 +1,8 @@
-# Cover Letter Generator
+# Cover gen
+<img src="https://github.com/user-attachments/assets/3593be9f-2f9f-4f3a-a25d-8b4f86218fff" alt="image" width="300" height="300">
 
-A generative AI-powered tool to create personalized and professional cover letters leveraging Google's Gemini 2.0 Flash generative AI model. This web application allows users to upload their resume, paste a job description, and generate a tailored cover letter in seconds.
+
+A generative AI-powered tool to create personalized and professional cover letters leveraging Google's Gemini 2.0 Flash generative AI model. 
 
 ---
 
